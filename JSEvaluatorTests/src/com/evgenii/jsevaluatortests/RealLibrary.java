@@ -83,7 +83,7 @@ public class RealLibrary extends Activity {
 	}
 
 	protected void testCryptoJs() {
-		jsCode += loadJs("real_library/cryptojs.js");
+		jsCode += loadJs("real_library/aes.js");
 		jsCode += "; ";
 		jsCode += "var encrypted = CryptoJS.AES.encrypt('CryptoJs is working!', 'Secret Passphrase');"
 				+ "var decrypted = CryptoJS.AES.decrypt(encrypted, 'Secret Passphrase');"
